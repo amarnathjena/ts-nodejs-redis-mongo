@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 
-connectDB(); // establish MongoDB connection before starting the server
+//connectDB(); // establish MongoDB connection before starting the server
 connectRedis(); // establish Redis connection before starting the server
 
 app.use('/api/employees', employeesRouter);
